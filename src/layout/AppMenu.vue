@@ -6,7 +6,7 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+        items: [{ label: 'Adri Borracho', icon: 'pi pi-fw pi-home', to: '/' }]
     },
     {
         label: 'UI Components',
@@ -96,77 +96,77 @@ const model = ref([
             }
         ]
     },
-    {
-        label: 'Hierarchy',
-        items: [
-            {
-                label: 'Submenu 1',
-                icon: 'pi pi-fw pi-bookmark',
-                items: [
-                    {
-                        label: 'Submenu 1.1',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [
-                            { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-bookmark' }
-                        ]
-                    },
-                    {
-                        label: 'Submenu 1.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-bookmark' }]
-                    }
-                ]
-            },
-            {
-                label: 'Submenu 2',
-                icon: 'pi pi-fw pi-bookmark',
-                items: [
-                    {
-                        label: 'Submenu 2.1',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [
-                            { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-bookmark' }
-                        ]
-                    },
-                    {
-                        label: 'Submenu 2.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-bookmark' }]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        label: 'Get Started',
-        items: [
-            {
-                label: 'Documentation',
-                icon: 'pi pi-fw pi-question',
-                to: '/documentation'
-            },
-            {
-                label: 'Figma',
-                url: 'https://www.dropbox.com/scl/fi/bhfwymnk8wu0g5530ceas/sakai-2023.fig?rlkey=u0c8n6xgn44db9t4zkd1brr3l&dl=0',
-                icon: 'pi pi-fw pi-pencil',
-                target: '_blank'
-            },
-            {
-                label: 'View Source',
-                icon: 'pi pi-fw pi-search',
-                url: 'https://github.com/primefaces/sakai-vue',
-                target: '_blank'
-            },
-            {
-                label: 'Nuxt Version',
-                url: 'https://github.com/primefaces/sakai-nuxt',
-                icon: 'pi pi-fw pi-star'
-            }
-        ]
-    }
+    // {
+    //     label: 'Hierarchy',
+    //     items: [
+    //         {
+    //             label: 'Submenu 1',
+    //             icon: 'pi pi-fw pi-bookmark',
+    //             items: [
+    //                 {
+    //                     label: 'Submenu 1.1',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [
+    //                         { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-bookmark' }
+    //                     ]
+    //                 },
+    //                 {
+    //                     label: 'Submenu 1.2',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [{ label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-bookmark' }]
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             label: 'Submenu 2',
+    //             icon: 'pi pi-fw pi-bookmark',
+    //             items: [
+    //                 {
+    //                     label: 'Submenu 2.1',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [
+    //                         { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-bookmark' }
+    //                     ]
+    //                 },
+    //                 {
+    //                     label: 'Submenu 2.2',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [{ label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-bookmark' }]
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // },
+    // {
+    //     label: 'Get Started',
+    //     items: [
+    //         {
+    //             label: 'Documentation',
+    //             icon: 'pi pi-fw pi-question',
+    //             to: '/documentation'
+    //         },
+    //         {
+    //             label: 'Figma',
+    //             url: 'https://www.dropbox.com/scl/fi/bhfwymnk8wu0g5530ceas/sakai-2023.fig?rlkey=u0c8n6xgn44db9t4zkd1brr3l&dl=0',
+    //             icon: 'pi pi-fw pi-pencil',
+    //             target: '_blank'
+    //         },
+    //         {
+    //             label: 'View Source',
+    //             icon: 'pi pi-fw pi-search',
+    //             url: 'https://github.com/primefaces/sakai-vue',
+    //             target: '_blank'
+    //         },
+    //         {
+    //             label: 'Nuxt Version',
+    //             url: 'https://github.com/primefaces/sakai-nuxt',
+    //             icon: 'pi pi-fw pi-star'
+    //         }
+    //     ]
+    // }
 ]);
 </script>
 
@@ -176,11 +176,11 @@ const model = ref([
             <app-menu-item v-if="!item.separator" :item="item" :index="i"></app-menu-item>
             <li v-if="item.separator" class="menu-separator"></li>
         </template>
-        <li>
+        <!--<li>
             <a href="https://www.primefaces.org/primeblocks-vue/#/" target="_blank">
                 <img src="/layout/images/banner-primeblocks.png" alt="Prime Blocks" class="w-full mt-3" />
             </a>
-        </li>
+        </li>-->
     </ul>
 </template>
 
