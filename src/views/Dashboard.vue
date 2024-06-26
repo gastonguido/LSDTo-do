@@ -116,52 +116,52 @@ watch(
 
 <template>
     <div class="grid">
-        <div class="col-12 lg:col-6 xl:col-3">
-            <div class="card mb-0">
+        <div class="col-12 lg:col-6 xl:col-4">
+            <div class="card mb-0 bg-red-200">
                 <div class="flex justify-content-between mb-3">
                     <div>
-                        <span class="block text-500 font-medium mb-3">Orders</span>
-                        <div class="text-900 font-medium text-xl">152</div>
+                        <span class="block text-500 font-medium mb-3">TO DO</span>
+                        <div class="text-900 font-medium text-xl">Hacer inteligente a Adri</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center bg-red-100 border-round" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-exclamation-triangle text-red-500 text-xl"></i>
                     </div>
                 </div>
-                <span class="text-green-500 font-medium">24 new </span>
-                <span class="text-500">since last visit</span>
+                <span class="text-red-500 font-medium">28 </span>
+                <span class="text-500">Tasks waiting to be started</span>
             </div>
         </div>
-        <div class="col-12 lg:col-6 xl:col-3">
-            <div class="card mb-0">
+        <div class="col-12 lg:col-6 xl:col-4">
+            <div class="card mb-0 bg-yellow-300">
                 <div class="flex justify-content-between mb-3">
                     <div>
-                        <span class="block text-500 font-medium mb-3">Revenue</span>
+                        <span class="block text-500 font-medium mb-3">IN PROGRESS [...]</span>
                         <div class="text-900 font-medium text-xl">$2.100</div>
                     </div>
                     <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-map-marker text-orange-500 text-xl"></i>
+                        <i class="pi pi-spinner text-orange-500 text-xl"></i>
                     </div>
                 </div>
-                <span class="text-green-500 font-medium">%52+ </span>
-                <span class="text-500">since last week</span>
+                <span class="text-yellow-600 font-medium">288 </span>
+                <span class="text-900">Tasks in progress</span>
             </div>
         </div>
-        <div class="col-12 lg:col-6 xl:col-3">
-            <div class="card mb-0">
+        <div class="col-12 lg:col-6 xl:col-4">
+            <div class="card mb-0 bg-green-200">
                 <div class="flex justify-content-between mb-3">
                     <div>
-                        <span class="block text-500 font-medium mb-3">Customers</span>
+                        <span class="block text-500 font-medium mb-3">DONE </span>
                         <div class="text-900 font-medium text-xl">28441</div>
                     </div>
                     <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
+                        <i class="pi pi-check text-cyan-500 text-xl"></i>
                     </div>
                 </div>
-                <span class="text-green-500 font-medium">520 </span>
-                <span class="text-500">newly registered</span>
+                <span class="text-green-600 font-medium">520 </span>
+                <span class="text-500">Tasks done today</span>
             </div>
         </div>
-        <div class="col-12 lg:col-6 xl:col-3">
+        <!-- <div class="col-12 lg:col-6 xl:col-3">
             <div class="card mb-0">
                 <div class="flex justify-content-between mb-3">
                     <div>
@@ -353,5 +353,6 @@ watch(
                 </div>
             </div>
         </div>
+    </div> -->
     </div>
 </template>
